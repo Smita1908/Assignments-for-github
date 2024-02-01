@@ -1,4 +1,4 @@
-# Automated-Knowledge-Base-Construction 
+# Title:
 This project focuses on implementing various functionality related to automated knowledge base construction
 
 # Description:
