@@ -1,0 +1,40 @@
+Problem 3.1
+SELECT ?character ?characterLabel
+WHERE
+{
+wd:Q15228 wdt:P674 ?character.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+https://w.wiki/59CD
+
+
+
+Problem 3.2
+
+SELECT ?character ?characterLabel
+WHERE
+{
+wd:Q15228 wdt:P674 ?character.
+?character wdt:P21 wd:Q6581097.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+https://w.wiki/59CB
+
+
+
+
+Problem 3.3
+
+SELECT ?universe ?universeLabel (COUNT(?character) AS ?character_count)
+WHERE
+{
+  ?universe wdt:P31 wd:Q559618 .
+  ?character wdt:P1080 ?universe .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO LANGUAGE],en". }
+} 
+GROUP BY ?universe ?universeLabel
+ORDER BY DESC(?character_count)
+
+https://w.wiki/59CF
