@@ -1,4 +1,4 @@
-# Title: This project focuses on implementing various functionality related to automated knowledge base construction.
+
 
 # Description:
 In this project, there are multiple sub-projects where each one implements different functionality that is required to build a knowledge base and its related functionality. In the below section, each project is explained step by step. 
